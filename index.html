@@ -1,14 +1,62 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <style>
+      body{
+        margin: 0;
+      }
+      .app{
+        position: relative;
+        height: 100%;
+        background-color: #FFFDF6;
+      }
+      .appbar{
+        background-color: #265366;
+        color: #fff;
+        padding: 12px;
+        text-align: center;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.6);
+      }
+      .memo-list{
+        padding-top: 5px;
+      }
+      .memo-list-item{
+        background-color: #fff;
+        padding: 12px;
+        border-bottom: 1px solid #ddd;
+      }
+      .memo-list-item h3{
+        font-size: 18px;
+        margin: 0;
+      }
+      .memo-list-item p {
+        font-size: 11px;
+        color: #a2a2a2;
+        margin: 0;
+      }
+      .memo-add-button{
+        width:50px;
+        height:50px;
+        background-color: #c31676;
+        color: #fff;
+        font-size: 24px;
+        text-align: center;
+        line-height: 2em;
+        border-radius: 50%;
+        position: absolute;
+        bottom: 24px;
+        right: 24px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+      }
+    </style>
   </head>
   <body>
-    <div>
-      <div>
+    <div class="app">
+      <div class="appbar">
         Memo
       </div>
-      <div>
-        <div>
+      <div class="memo-list">
+        <div class="memo-list-item">
           <h3>
             内容1
           </h3>
@@ -16,7 +64,7 @@
             2020/06/04
           </p>
         </div>
-        <div>
+        <div class="memo-list-item">
           <h3>
             内容2
           </h3>
@@ -24,7 +72,7 @@
             2020/06/03
           </p>
         </div>
-        <div>
+        <div class="memo-list-item">
           <h3>
             内容3
           </h3>
@@ -32,7 +80,7 @@
             2020/06/02
           </p>
         </div>
-        <div>
+        <div class="memo-list-item">
           <h3>
             内容4
           </h3>
@@ -40,9 +88,9 @@
             2020/06/01
           </p>
         </div>
-        <div>
-          +
-        </div>
+      </div>
+      <div class="memo-add-button">
+        +
       </div>
     </div>
   </body>
